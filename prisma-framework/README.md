@@ -18,6 +18,8 @@ and programming languages.
 
 TODO Why the world needs Prisma Framework
 
+## Use Cases
+
 ## Core Objects
 
 Core objects describe the format of the shared data structures across workflows.
