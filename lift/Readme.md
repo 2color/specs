@@ -129,9 +129,9 @@ model Post {
 
 ## Concepts
 
-Lift has the following concepts: [projects](#project), [migrations](#migration), [steps](#step), and [hooks](#hook).
+Lift works with the following concepts: [projects](#project), [schema](#schema), [migrations](#migration), [steps](#step), and [hooks](#hook).
 
-- A _project_ has many _migrations_
+- A _project_ has one _schema_ and many _migrations_
 - A _migration_ has many _steps_
 - A _migration_ has many _hooks_
 
@@ -139,9 +139,9 @@ Lift has the following concepts: [projects](#project), [migrations](#migration),
 
 Your application project contains a `migrations/` folder that has many migrations.
 
-#### Schema
+### Schema
 
-Every Project contains a Schema. This schema describes the structure of your datasource. Often you will find the project's Schema in the `schema.prisma` file, but the Schema may be named differently or spread over multiple files.
+Every Project contains a Schema. This schema describes the structure of your datasource. Often you will find the project's Schema in the `schema.prisma` file, but the Schema may be named differently or spread over multiple files. ([More information about Prisma Schema](../schema/Readme.md))
 
 ### Migration
 
