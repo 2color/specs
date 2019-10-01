@@ -18,7 +18,7 @@ Lift is Prisma's declarative migration system used to evolve your application's 
   - [The Lift Approach](#the-lift-approach)
   - [Concepts](#concepts)
     - [Project](#project)
-      - [Schema](#schema)
+    - [Schema](#schema)
     - [Migration](#migration)
     - [Step](#step)
     - [Hook](#hook)
