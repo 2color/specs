@@ -6,8 +6,7 @@
   - Spec: Outdated 🚨
   - Implementation: Unknown ❔
 
-Lift is Prisma's declarative migration system. Rather than scripting your migrations by hand, Lift allows you to describe how you want the structure of your
-data to look after the migration and Lift will take care of generating the necessary steps to get you there.
+Lift is Prisma's declarative migration system used to evolve your application's data model. Rather than scripting your migrations by hand, Lift allows you to describe how you want the structure of your data to look after the migration and Lift will take care of generating the necessary steps to get you there.
 
 ---
 
@@ -80,7 +79,7 @@ migrations/
 ├── 005_update_pricing.up.sql
 ```
 
-The numbers determine the order the migrations should be performed in. We first run `001`, then `002`, etc. The `up` and `down` determine the direction we're
+Each file represents one migration. The numbers determine the order the migrations should be performed in. We first run `001`, then `002`, etc. The `up` and `down` determine the direction we're
 migrating. If we're migrating up, we'll run the `up` scripts, if we're migrating down, we'll run the `down` scripts.
 
 Traditionally, you write migrations by hand to migrate your database.
@@ -98,8 +97,7 @@ This is error-prone and stressful, especially when you're operating on your prod
 
 ## The Lift Approach
 
-Prisma's Lift works differently. While Lift still has a `migrations/` folder, the migrations are generated for you. With Lift, you just need to change your
-`schema.prisma` file and run `lift save`. This will generate the necessary steps to transition your schema from A to B.
+Prisma's Lift works differently. While Lift still has a `migrations/` folder, the migrations are generated for you. With Lift, you just need to change your project's `schema.prisma` file and run `lift save`. This will generate the necessary steps to transition your schema from A to B.
 
 A result might look like this:
 
