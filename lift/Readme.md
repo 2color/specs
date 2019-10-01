@@ -177,10 +177,8 @@ the **Migration History**. It includes all successful and failed migrations of t
 
 ## Architecture
 
-Lift has 2 parts: a **Lift Client** and a **Lift Engine**. By default, the Lift Engine runs locally as a
-[sidecar process](https://blog.davemdavis.net/2018/03/13/the-sidecar-pattern/). This makes it easy to get started. As your team's data requirements become more
-complex, you may prefer to handle your migrations on a remote host where you have fine-grained access control over migrations. We will make this possible in the
-future.
+Lift has 2 parts: a **Lift Client** and a **Lift Engine**. The Lift Engine runs locally as a
+[sidecar process](https://blog.davemdavis.net/2018/03/13/the-sidecar-pattern/) to the Lift Client. 
 
 ```
 ┌──────────────────┐       ┌──────────────────┐      ┌──────────────┐
@@ -299,8 +297,7 @@ made, we'll provide a visual diff of the changes to the user and ask for confirm
 
 ### Lift Engine
 
-The Lift Engine is a low-level interface that the Lift Client communicates with. Currently the client communicates to the migration engine in the JSONRPC format
-over stdio. In the future, we'll provide an HTTP API to communicate with the Lift Engine.
+The Lift Engine is a low-level interface that the Lift Client communicates with. Currently the client communicates to the migration engine in the JSONRPC format over stdio.
 
 ## Lift CLI
 
