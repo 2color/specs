@@ -152,3 +152,4 @@ Assemble takes a Schema AST and generates a string.
 - **AST:** AST stands for an abstract syntax tree. An abstract syntax tree is a tree structure representing the syntactic structure of a text string.
 - **Prisma CLI:** A commandline interface that bundles Prisma's workflows into one tool
 - **Prisma SDK:** The programmatic API to Prisma's tools.
+
