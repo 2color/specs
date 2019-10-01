@@ -129,7 +129,7 @@ model Post {
 
 ## Concepts
 
-Lift has the following concepts: projects, migrations, steps, and hooks.
+Lift has the following concepts: [projects](#project), [migrations](#migration), [steps](#step), and [hooks](#hook).
 
 - A _project_ has many _migrations_
 - A _migration_ has many _steps_
@@ -137,12 +137,11 @@ Lift has the following concepts: projects, migrations, steps, and hooks.
 
 ### Project
 
-Your application project contains a `migrations/` that has many migrations.
+Your application project contains a `migrations/` folder that has many migrations.
 
-### Schema
+#### Schema
 
-Every Project contains a Schema. This schema describes the structure of your datasource. Often you will find the project's Schema in the `schema.prisma` file,
-but the Schema may be named differently or spread over many files.
+Every Project contains a Schema. This schema describes the structure of your datasource. Often you will find the project's Schema in the `schema.prisma` file, but the Schema may be named differently or spread over multiple files.
 
 ### Migration
 
@@ -153,60 +152,7 @@ A Migration is a grouping of one or more Steps. Each migration lives in it's own
 Steps are actions that resolves into zero or more database commands. Steps generically describe models, fields and relationships, so they can be easily
 translated to datasource-specific migration commands.
 
-<details>
-<summary>CreateModel</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>UpdateModel</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>DeleteModel</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>CreateField</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>DeleteField</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>UpdateField</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>CreateEnum</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>UpdateEnum</summary>
-
-**TODO**
-
-</details>
-<details>
-<summary>DeleteEnum</summary>
-
-**TODO**
-
-</details>
+Example: The step `CreateModel` describes that a new model should be created. Its details include all the information necessary to create this model. TODO
 
 ### Hook
 
