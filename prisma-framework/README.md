@@ -11,8 +11,37 @@ and programming languages.
 
 ---
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Motivation](#motivation)
+- [Use Cases](#use-cases)
+- [Core Objects](#core-objects)
+  - [Schema](#schema)
+  - [Migration](#migration)
+- [Core Workflows](#core-workflows)
+  - [Introspect](#introspect)
+    - [Postgres](#postgres)
+    - [Mongo](#mongo)
+  - [Generate](#generate)
+  - [Access](#access)
+    - [Client](#client)
+    - [Server](#server)
+    - [Connector](#connector)
+  - [Migrate](#migrate)
+    - [Client](#client-1)
+    - [Server](#server-1)
+  - [Manage](#manage)
+  - [Schema](#schema-1)
+    - [Parse](#parse)
+    - [Format](#format)
+    - [Diff](#diff)
+    - [Patch](#patch)
+    - [Assemble](#assemble)
+- [Terminology](#terminology)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Motivation
 
