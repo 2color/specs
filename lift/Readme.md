@@ -129,11 +129,12 @@ model Post {
 
 ## Concepts
 
-Lift works with the following concepts: [projects](#project), [schema](#schema), [migrations](#migration), [steps](#step), and [hooks](#hook).
+Lift works with the following concepts: [projects](#project), [schema](#schema), [migrations](#migration), [steps](#step), [hooks](#hook), and [migration history](#migration-history).
 
 - A _project_ has one _schema_ and many _migrations_
 - A _migration_ has many _steps_
 - A _migration_ has many _hooks_
+- A _migration_ is logged in the _migration history_
 
 ### Project
 
@@ -165,7 +166,7 @@ your migrations. You can write hooks to:
 - Add specific database primitives like functions in Postgres, which are not yet supported by Prisma.
 - Seed the database with data after a migration has been executed.
 
-## Migration History
+### Migration History
 
 When a migration is running or has been executed successfully, Prisma writes this information into a table or collection in the database. This table is known as
 the **Migration History**. It includes all successful and failed migrations of the specific Prisma Project. We store the migration history so that Prisma can:
