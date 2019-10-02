@@ -22,7 +22,7 @@ Lift is Prisma's declarative migration system used to evolve your application's 
     - [Migration](#migration)
     - [Step](#step)
     - [Hook](#hook)
-  - [Migration History](#migration-history)
+    - [Migration History](#migration-history)
   - [Architecture](#architecture)
     - [Lift Client](#lift-client)
       - [Save](#save)
